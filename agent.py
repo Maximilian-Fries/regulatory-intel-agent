@@ -576,6 +576,7 @@ def main():
         DIGEST_OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
         DIGEST_OUTPUT_PATH.write_text(html)
         log.info(f"Empty digest saved to {DIGEST_OUTPUT_PATH}")
+        send_email(html, f"🔍 Regulatory Intel Digest — {digest_date}")
         return
 
     # Step 2: Evaluate
