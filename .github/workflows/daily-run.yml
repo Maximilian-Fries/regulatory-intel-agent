@@ -27,9 +27,9 @@ jobs:
         uses: actions/cache@v4
         with:
           path: data/
-          key: regulatory-intel-db-${{ github.run_number }}
+          key: regulatory-intel-db-v2-${{ github.run_number }}
           restore-keys: |
-            regulatory-intel-db-
+            regulatory-intel-db-v2-
 
       - name: Run agent
         env:
