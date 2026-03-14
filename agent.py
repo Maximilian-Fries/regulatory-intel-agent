@@ -26,7 +26,7 @@ DB_PATH = Path(__file__).parent / "data" / "regulatory_intel.db"
 DIGEST_OUTPUT_PATH = Path(__file__).parent / "data" / "latest_digest.html"
 MAX_ITEMS_PER_FEED = 15          # per fetch cycle
 MAX_AGE_DAYS = 3                 # ignore items older than this
-RELEVANCE_THRESHOLD = 3          # 1-5 scale, keep items >= this
+RELEVANCE_THRESHOLD = 2          # 1-5 scale, keep items >= this
 ANTHROPIC_MODEL = "claude-sonnet-4-20250514"
 
 logging.basicConfig(
